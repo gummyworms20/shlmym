@@ -1,0 +1,203 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> shiela may </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/30781e58c1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="cointaier">
+            <nav> 
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#playlist">Playlist</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Project Manager </p>
+                <h1> Hi, I'm <span>Shiela</span><br>Magpantay</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="C:\Users\Lorelyn Manalo\Desktop\Personal Website\IMG_20221215_173243.jpg">
+        </div>
+        <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p> I'm Shiela May Malabanan Magpantay, turning 21 yeas old on January 13. I'm currently third year college takig up Bachelor of Science in Information Technology.
+                 I live in Candelaria, Quezon but for now I'm here in Makati City to help my brother to our business. </p> 
+
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+            <div class="tab-contents active-tab" id="skills" >
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Website</li>
+                    <li><span>Web Development</span><br>Web Application</li>
+                    <li><span>Writer</span><br>Web Content</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>CCST Studet Council</span><br>Secretary</li>
+                    <li><span>PYAF Organization</span><br>Sitio 4 Representative</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Elementary</span><br>Masin Elementary School</li>
+                        <li><span>High School</span><br>Recto Mmemorial National High School</li>
+                        <li><span>College</span><br>Pamantasan ng Lungsod ng San Pablo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------p------------>
+
+<div id="photos"> 
+    <div class="container">
+        <h1 class="sub-title">My Photos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="iii.jpg">
+                <div class="layer">
+                </div>
+            </div>
+            <div class="work">
+                <img src="C:\Users\Lorelyn Manalo\Desktop\Personal Website\IMG_20221215_173212.jpg">
+                <div class="layer">
+                </div>
+            </div>
+            <div class="work">
+                <img src="C:\Users\Lorelyn Manalo\Desktop\Personal Website\IMG_20221215_173123.jpg">
+                <div class="layer">
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<!------------playlist----------->
+<div id="playlist"> 
+    <div class="container">
+        <h1 class="sub-title">My Playlist</h1>
+        <div class="music-container">
+          <div class="song">
+        <div>
+            <img src="images/atw.jpg" alt="">
+          </div>
+          <div>
+            <h1> Taylor Swift : All Too Well</h1>
+          </div>
+                <div>
+                <audio controls>
+                    <source src="music/alltowell.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+    </div>
+    <div class="song">
+        <div>
+            <img src="images/as.jpg" alt="">
+          </div>
+          <div>
+            <h1>Air Supply : Having You Near Me</h1>
+          </div>
+                <div>
+                <audio controls>
+                    <source src="music/hynm.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+    </div>
+    <div class="song">
+        <div>
+            <img src="images/cb.jpg" alt="">
+          </div>
+          <div>
+            <h1>Chris Brown : Under The Influence</h1>
+          </div>
+                <div>
+                <audio controls>
+                    <source src="music/cb.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+    </div>
+  
+</div>
+
+<!------------contact------------>
+<div id="contact">
+    <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <title> Contact </title>
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>shielamagpantay13@gmail.com</p>
+                    <p><i class="fas fa-phone-square"></i> 09813334824</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/shlmym"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/shlmym_"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/shlmym_"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>   
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
